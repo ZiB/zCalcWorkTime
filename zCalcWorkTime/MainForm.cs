@@ -27,63 +27,46 @@ namespace zCalcWorkTime
 
         private void TextBox_TimeTx_TextChanged(object sender, EventArgs e)
         {
-            double timeTx;
-            double timeRx;
-            double timeWork;
-            double timeWait;
-
-            if (double.TryParse(TextBox_TimeTx.Text, out timeTx) == false)
+            if (double.TryParse(TextBox_TimeTx.Text, out var timeTx) == false)
                 return;
 
-            if (double.TryParse(TextBox_TimeRx.Text, out timeRx) == false)
+            if (double.TryParse(TextBox_TimeRx.Text, out var timeRx) == false)
                 return;
 
-            if (double.TryParse(TextBox_TimeWork.Text, out timeWork) == false)
+            if (double.TryParse(TextBox_TimeWork.Text, out var timeWork) == false)
                 return;
 
-            if (double.TryParse(TextBox_TimeWait.Text, out timeWait) == false)
+            if (double.TryParse(TextBox_TimeWait.Text, out var timeWait) == false)
                 return;
 
-            double currentTx;
-            double currentRx;
-            double currentWork;
-            double currentWait;
-            double currentSleep;
-
-            if (double.TryParse(TextBox_CurrentTx.Text, out currentTx) == false)
+            if (double.TryParse(TextBox_CurrentTx.Text, out var currentTx) == false)
                 return;
 
-            if (double.TryParse(TextBox_CurrentRx.Text, out currentRx) == false)
+            if (double.TryParse(TextBox_CurrentRx.Text, out var currentRx) == false)
                 return;
 
-            if (double.TryParse(TextBox_CurrentWork.Text, out currentWork) == false)
+            if (double.TryParse(TextBox_CurrentWork.Text, out var currentWork) == false)
                 return;
 
-            if (double.TryParse(TextBox_CurrentWait.Text, out currentWait) == false)
+            if (double.TryParse(TextBox_CurrentWait.Text, out var currentWait) == false)
                 return;
 
-            if (double.TryParse(TextBox_CurrentSleep.Text, out currentSleep) == false)
+            if (double.TryParse(TextBox_CurrentSleep.Text, out var currentSleep) == false)
                 return;
 
-            double txWithACK;
-            double txWithoutACK;
-            double batteryCapacity;
-            double errorPercent;
-            double rxTimeout;
-
-            if (double.TryParse(TextBox_ErrorPercent.Text, out errorPercent) == false)
+            if (double.TryParse(TextBox_ErrorPercent.Text, out var errorPercent) == false)
                 return;
 
-            if (double.TryParse(TextBox_TxWithACK.Text, out txWithACK) == false)
+            if (double.TryParse(TextBox_TxWithACK.Text, out var txWithACK) == false)
                 return;
 
-            if (double.TryParse(TextBox_TxWithoutACK.Text, out txWithoutACK) == false)
+            if (double.TryParse(TextBox_TxWithoutACK.Text, out var txWithoutACK) == false)
                 return;
 
-            if (double.TryParse(TextBox_BatteryCapacity.Text, out batteryCapacity) == false)
+            if (double.TryParse(TextBox_BatteryCapacity.Text, out var batteryCapacity) == false)
                 return;
 
-            if (double.TryParse(TextBox_RxTimeout.Text, out rxTimeout) == false)
+            if (double.TryParse(TextBox_RxTimeout.Text, out var rxTimeout) == false)
                 return;
 
             double current = 0;
